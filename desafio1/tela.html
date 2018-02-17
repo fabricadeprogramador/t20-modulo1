@@ -2,7 +2,48 @@
 
     <head>
        <title>Calculadora</title> 
+        <script>
 
+        /**
+        * HTML tags básicas ->  html, head, title, body, label, input, button, div
+        * Css  -> Criando classes, background, border, padding, font, margin
+        * DOM
+        * As Tags são Elementos
+        * ID dos elementos 
+        * Objetos Nativos do JS (document, window, console)
+        * Console.log()
+        * Métodos Nativos (document.getElementById()  , window.alert())
+        * Acessando elementos do DOM 
+        * Exibindo mensagens de alerta (window.alert() )
+        **/
+
+        class Calculadora{
+            somar (n1, n2){
+                return n1+n2;
+            }
+        }
+
+        class CalculadoraController{
+            realizarSoma(){
+                //ENTRADA
+                let n1 =  parseFloat(document.getElementById("n1").value);
+                let n2 =  parseFloat(document.getElementById("n2").value);
+              
+                //PROCESSAMENTO
+                let calc = new Calculadora();
+                let soma = calc.somar(n1, n2);
+
+                //SAÍDA
+                window.alert(soma);
+            }
+        }
+      
+
+        let  calcController = new  CalculadoraController();
+     
+
+
+        </script>
         <style>
             #calculadora{
                 background-color:#DAE8FC;
@@ -54,16 +95,16 @@
                 <label> Número 1 </label>
             </div>
             <div>
-                <input type="number"/>
+                <input type="number" id="n1"/>
             </div>
             <div>
                 <label> Número 2</label>
              </div>
              <div>
-                <input type="number"/>
+                <input type="number" id="n2"/>
              </div>
              <div>
-                <button>Calcular</button>
+                <button onclick="calcController.realizarSoma();">Calcular</button>
             </div>
        </div>
     </body>
