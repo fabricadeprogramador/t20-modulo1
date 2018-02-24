@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <link href="style.css" rel="stylesheet" >
+    </head>
+
+    <body>
+       
+
+        <nav class="centro">
+
+           <h2> Menu </h2>
+
+            <ul>
+                <li>Usuário</li>
+                <li>Cliente</li>
+                <li>Professor</li>
+                <li>Curso</li>
+                <li>Sair</li>
+            </ul>
+
+        </nav>
+
+        <main>
+            <h1 class="centro">Cadastro de Cliente</h1>
+            <form>
+                    <div>
+                        <input type="text" placeholder="Nome"/>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="E-mail"/>
+                    </div>
+                
+                    <div>
+                        <label for="m">Masculino</label>
+                        <input type="radio" name="sexo" id="m"/>
+                    
+                        <label for="f">Feminino</label>
+                        <input type="radio" name="sexo" id="f"/>
+                    </div>
+                    <fieldset>
+                        <legend>Cursos de Intereresse</legend>
+                        <div>
+                            <input type="checkbox" id="web"/> 
+                            <label for="web"> Curso de Desenvolvimento Web</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="mobile"/> 
+                            <label for="mobile"> Curso de Desenvolvimento Mobile</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="desktop"/> 
+                            <label for="desktop"> Curso de Desenvolvimento Desktop</label>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <label for="estado"> Estado </label>
+                        <select id="estado">
+                                <option value=""> Nenhum </option>
+                                <option value="MS" selected> Mato Grosso do Sul</option>
+                                <option value="SP"> São Paulo</option>
+                                <option value="RJ"> Rio de Janeiro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Foto</label>
+                        <input type="file"/>
+                    </div>
+                    <div>
+                        <label for="data" class="centro">Data Nascimento</label>
+                        <input type="datetime-local" id="data">
+                    </div>
+                    <div class="centro">
+                        <button>Salvar</button>
+                    </div>
+
+            </form>
+
+        </main>
+
+    </body>
+</html>
