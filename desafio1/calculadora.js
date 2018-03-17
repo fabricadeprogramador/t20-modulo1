@@ -9,7 +9,7 @@ class Calculadora{
         var r = n1 + n2;
 
         //3) Exibir o resultado
-        alert(r);
+        document.getElementById("resultadoSoma").innerText=r;
     }
 
      subtrair(){
@@ -46,7 +46,7 @@ class Calculadora{
         var r = n1 * n2;
 
         //3) Exibir o resultado
-        alert(r);
+        document.getElementById("resultadoMult").innerText=r;
 
     }
      porcentagem(){
