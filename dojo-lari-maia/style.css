@@ -1,0 +1,13 @@
+#principal{
+    width: 50%;
+    margin: auto;
+    background-color: lightsteelblue
+}
+
+#principal input{
+    width: 100%
+}
+
+#principal div{
+    padding:10px;
+}
