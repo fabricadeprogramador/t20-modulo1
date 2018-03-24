@@ -5,6 +5,7 @@
         <link href="css/style.css" rel="stylesheet" >
       
         <script src="js/menu.js"></script>
+        <script src="js/cadastro.js"></script>
     </head>
 
     <body>
@@ -29,32 +30,32 @@
             <h1 class="centro">Cadastro de Cliente</h1>
             <form>
                     <div>
-                        <input type="text" placeholder="Nome"/>
+                        <input type="text" placeholder="Nome" id="nome"/>
                     </div>
                     <div>
-                        <input type="email" placeholder="E-mail"/>
+                        <input type="email" placeholder="E-mail" id="email"/>
                     </div>
                 
                     <div>
                         <label for="m">Masculino</label>
-                        <input type="radio" name="sexo" id="m"/>
+                        <input type="radio" name="sexo" value="m" id="m"/>
                     
                         <label for="f">Feminino</label>
-                        <input type="radio" name="sexo" id="f"/>
+                        <input type="radio" name="sexo" value="f" id="f"/>
                     </div>
                     <fieldset>
                         <legend>Cursos de Intereresse</legend>
                         <div>
-                            <input type="checkbox" id="web"/> 
+                            <input type="checkbox" id="web" name="curso" /> 
                             <label for="web"> Curso de Desenvolvimento Web</label>
                         </div>
 
                         <div>
-                            <input type="checkbox" id="mobile"/> 
+                            <input type="checkbox" id="mobile" name="curso"/> 
                             <label for="mobile"> Curso de Desenvolvimento Mobile</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="desktop"/> 
+                            <input type="checkbox" id="desktop" name="curso"/> 
                             <label for="desktop"> Curso de Desenvolvimento Desktop</label>
                         </div>
                     </fieldset>
@@ -69,14 +70,14 @@
                     </div>
                     <div>
                         <label>Foto</label>
-                        <input type="file"/>
+                        <input type="file"  id="foto"/>
                     </div>
                     <div>
                         <label for="data" class="centro">Data Nascimento</label>
                         <input type="datetime-local" id="data">
                     </div>
                     <div class="centro">
-                        <button>Salvar</button>
+                        <button type="button" onclick="cadastro.validar()">Salvar</button>
                     </div>
 
             </form>
