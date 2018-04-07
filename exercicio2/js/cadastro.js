@@ -5,6 +5,8 @@ class Cadastro{
 
         //1) Leitura dos inputs
 
+        let mensagemValidacao = "";
+
         let nome  = document.getElementById("nome").value;
         let email  = document.getElementById("email").value;
        
@@ -16,32 +18,37 @@ class Cadastro{
        
         //2) Validação dos campos
         if (nome==""){
-            window.alert("Preencha o campo nome!");
+            mensagemValidacao += "Preencha o campo nome!\n";
         }
 
         if (email==""){
-            window.alert("Preencha o campo e-mail");
+           mensagemValidacao += "Preencha o campo e-mail\n";
         }
 
         if (sexo==null){
-            window.alert("Preencha o campo sexo");
+           mensagemValidacao += "Preencha o campo sexo\n";
         }
 
         if (curso==null){
-            window.alert("Selecione pelo menos um curso de interesse!")
+            mensagemValidacao += "Selecione pelo menos um curso de interesse!\n";
         }
 
         if (estado==""){
-            window.alert("Selecione um estado");
+            mensagemValidacao += "Selecione um estado\n";
         }
 
         if(foto==undefined){
-            window.alert("Selecione uma foto");
+           mensagemValidacao += "Selecione uma foto\n";
         }else if (foto.size>1048576){
-            window.alert("A foto deve ter no máximo 1MB");
+            mensagemValidacao += "A foto deve ter no máximo 1MB\n";
         }else if (   foto.type!="image/jpeg"  &&  foto.type!="image/png"){
-                window.alert("Foto formato inválido")
+            mensagemValidacao += "Foto formato inválido";
         }
+
+        if (mensagemValidacao!=""){
+            window.alert(mensagemValidacao);
+        }
+
     }
 }
 
