@@ -46,7 +46,9 @@ class Cadastro{
         }
 
         if (mensagemValidacao!=""){
-            window.alert(mensagemValidacao);
+
+            document.getElementById("textoMensagem").innerText = mensagemValidacao;
+            document.getElementById("mensagens").classList.add("show");
         }
 
     }

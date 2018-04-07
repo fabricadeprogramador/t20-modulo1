@@ -69,6 +69,21 @@ main {
 .menu_aberto{
   width:40%;
 }
+
+.mensagem{
+  display: none;
+}
+.mensagem img {
+    width: 20px;
+    float: right;
+    cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
+
 @media (max-width: 600px) {
   nav {
     width: 0%;
