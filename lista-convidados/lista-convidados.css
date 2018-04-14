@@ -1,0 +1,47 @@
+body{
+    font-family: sans-serif;
+   color: #dfdfdf;
+}
+
+.card{
+    background-color: white;
+    width: 30%;
+    margin: auto;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px gray;
+    padding:30px;
+}
+
+.card-title{
+    font-weight: bold;
+    text-align: center;
+    color: gray;
+}
+
+.card-form input {
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid gray;
+
+    font-size: 12px;
+    padding: 10px 2px; 
+}
+
+.card-acoes button {
+    border: none;
+    padding: 15px;
+    font-size: 12px;
+    margin: 20px 0px 0px 0px;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 30px;
+    cursor: pointer;
+    transform: .3s;
+}
+
+.card-acoes button:hover{
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 2px 10px gray;
+}

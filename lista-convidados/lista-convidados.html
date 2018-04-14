@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    <script src="lista-convidados.js"></script>
+
+    <link href="lista-convidados.css" rel="stylesheet">
+    </head>
+
+    <body>
+        
+
+            <div class="card">
+                <h2 class="card-title">Adicionar Convidado</h2>
+                <div class="card-form"> 
+                    <input type="text" id="inputConvidado" placeholder="Nome do Convidado"/>
+                </div>
+                <div class="card-acoes">
+                    <button onclick="lista.adicionar()">Adicionar</button>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="card-title"> Lista de Convidados </h2>
+                <div> Qtd:  <label id="labelQtd"></label>   </div>
+                <div id="lista"></div>
+            </div>
+
+            
+
+    </body>
+</html>
