@@ -45,3 +45,12 @@ body{
     font-weight: bold;
     box-shadow: 0px 2px 10px gray;
 }
+
+.item-lista{
+    padding: 10px 20px;
+}
+
+.item-lista img{
+    width: 20px;
+    float: right;
+}
