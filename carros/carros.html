@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="carros.js"></script>
+        <link rel="stylesheet" href="carros.css">
+    </head>
+    <body>
+       
+        <input id="marca" type="text" placeholder="marca">
+        <input id="modelo" type="text" placeholder="modelo">
+        <input id="ano" type="number" placeholder="ano" min="1900" max="2018">
+        <button onclick="car.adicionar()">Adicionar</button>
+        <button onclick="car.gerarRelatorio()">Relatório</button>
+
+        <div>
+            <div id="lista-carros" ></div>
+            <br>
+            <div id="relatorio" class="invisivel"></div>
+        </div>
+    </body>
+</html>

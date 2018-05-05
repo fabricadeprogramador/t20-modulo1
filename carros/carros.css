@@ -1,0 +1,11 @@
+.excluir {
+    width: 20px;
+}
+
+.invisivel{
+    display: none;
+}
+
+.visivel{
+    display: block;
+}
