@@ -7,6 +7,7 @@ class ListaConvidados{
        this.id = 0;
        this.ehEditar=false;
        this.idEditar="";
+    
    }
     
     adicionar(){
@@ -66,6 +67,8 @@ class ListaConvidados{
         }
     
          this.limpar();
+
+         document.getElementById("btnAdicionar").innerText="Adicionar"
          
 
     }
@@ -75,12 +78,13 @@ class ListaConvidados{
         labelQtd.innerText = this.qtd;
     }
     excluir(id){
-
-       let  conv = document.getElementById(id);
-       let lis = document.getElementById("lista");
-       lis.removeChild(conv);
-       this.qtd =this.qtd - 1;
-       this.atualizarQtd();
+        if (window.confirm("Deseja Realmente Excluir?")==true){
+            let  conv = document.getElementById(id);
+            let lis = document.getElementById("lista");
+            lis.removeChild(conv);
+            this.qtd =this.qtd - 1;
+            this.atualizarQtd();
+        }
     }
 
     editar(id){
@@ -88,6 +92,8 @@ class ListaConvidados{
        document.getElementById("inputConvidado").value=nome;
        this.ehEditar=true;  //É pra editar
        this.idEditar = id;  //Quem editar
+       
+       document.getElementById("btnAdicionar").innerText="Alterar"
     }
 
 
