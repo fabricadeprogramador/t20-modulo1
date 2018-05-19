@@ -1,6 +1,5 @@
 class ListaNumeros{
 
-
     constructor(){
         this.numeros=[];
     }
@@ -12,7 +11,6 @@ class ListaNumeros{
 
     imprimirNumeros(){
         
-
         let el = document.getElementById("lista");
         
         let texto = el.innerText;
@@ -20,8 +18,11 @@ class ListaNumeros{
         texto= "";
 
         for (let i = 0  ;   i<this.numeros.length  ; i=i+1){
-
-         texto= texto+","+this.numeros[i];
+            if(i==0){
+             texto= this.numeros[i];
+            }else{
+                texto= texto+","+this.numeros[i];
+            }
 
         }
     
