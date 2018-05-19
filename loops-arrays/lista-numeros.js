@@ -1,7 +1,35 @@
 class ListaNumeros{
 
 
+    constructor(){
+        this.numeros=[];
+    }
+
+    adicionar(){
+        let n = parseInt(document.getElementById("n").value);
+        this.numeros.push(n);
+    }
+
     imprimirNumeros(){
+        
+
+        let el = document.getElementById("lista");
+        
+        let texto = el.innerText;
+
+        texto= "";
+
+        for (let i = 0  ;   i<this.numeros.length  ; i=i+1){
+
+         texto= texto+","+this.numeros[i];
+
+        }
+    
+        el.innerText = texto;
+    }
+
+
+    imprimirNumerosSequencias(){
         // ler o numero digitado
         let n = parseInt(document.getElementById("n").value);
         //exibir numeros de 1 a N
@@ -10,9 +38,9 @@ class ListaNumeros{
         
         let texto = el.innerText;
 
-        texto= 1;
+        texto= 2;
 
-        for (let v = 2  ;   v<=n  ; v=v+1){
+        for (let v = 4  ;   v<=n  ; v=v+2){
 
          texto= texto+","+v;
 
