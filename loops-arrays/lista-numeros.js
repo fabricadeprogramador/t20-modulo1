@@ -13,9 +13,26 @@ class ListaNumeros{
         
         let el = document.getElementById("lista");
         
-        let texto = el.innerText;
+        let texto= "";
 
-        texto= "";
+        for (let i = 0  ;   i<this.numeros.length  ; i=i+1){
+            if(i==0){
+             texto= this.numeros[i];
+            }else{
+                texto= texto+","+this.numeros[i];
+            }
+
+        }
+    
+        el.innerText = texto;
+    }
+
+
+    imprimirNumeros(){
+        
+        let el = document.getElementById("lista");
+        
+        let texto= "";
 
         for (let i = 0  ;   i<this.numeros.length  ; i=i+1){
             if(i==0){
